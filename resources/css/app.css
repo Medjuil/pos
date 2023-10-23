@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import 'material-icons/iconfont/material-icons.css';
+
+body {
+    font-family: 'Roboto' !important;
+}
+input.form-control, select.form-select {
+    border-radius: 2px;
+    padding: 0.9rem 1rem;
+    background-color: #fff !important;
+}
+.card {
+    background-color: #fff !important;
+}
+.card .card-header {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #fff !important;
+}
+.tinker-pro-pos button.btn {
+    padding: 0.5rem 1.3rem;
+}
+.tinker-pro-pos button.btn.btn-danger:active  {
+    background-color: rgb(255 40 0);
+    border: 1px solid rgb(255 40 0);
+}
+.tinker-pro-btn {
+    background-color: rgb(255 125 0) !important;
+    border: 1px solid rgb(255 125 0) !important;
+}
+
+button.btn {
+    padding: 0.9rem 1rem;
+}
+
+table tbody button.btn {
+    padding: 0.3rem 0.8rem !important;
+}
+
+.card .icon-container span {
+    font-size: 18px;
+}
+table th {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 12px;
+    border: 0;
+    padding-bottom: 1rem !important;
+}
+table td, th {
+    font-size: 13px;
+    color: rgb(121 121 121) !important;
+    vertical-align: middle;
+    background-color: #fff !important;
+    font-family: unset!important;
+
+}
+
+.card, a.btn, button.btn {
+    border-radius: 2px !important;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    font-weight: 500;
+    color: #717171;
+}
+
+.table-responsive {
+    min-width: 100%;
+    width: 0;
+}
+
+/* Admin dashboard styles */
+.tinker-pro-pos {
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    'aside header'
+    'aside main'
+    'aside footer';
+    grid-template-rows: 60px 1fr 70px;
+    grid-template-columns: 270px 1fr;
+}
+
+header {
+    grid-area: header;
+    /* border-bottom-color: red; */
+}
+
+aside {
+    grid-area: aside;
+    /* border-top-color: red; */
+    background-color: white;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+    /* border-top-color: red; */
+}
+
+.sidebar-logo-container {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: rgb(38 38 38);
+}
+
+.sidebar-logo-container img {
+    max-width: 100%;
+    min-width: 1vw;
+}
+
+.tinker-pro-pos aside ul.nav {
+    display: flex;
+    flex-direction: column;
+}
+.tinker-pro-pos aside li.nav-item {
+    border-left: 3px solid transparent;
+}
+.tinker-pro-pos aside li.nav-item.active, .tinker-pro-pos aside li.nav-item:hover {
+    border-left: 3px solid rgb(255 125 0);
+    border-bottom: 0 !important;
+}
+
+.tinker-pro-pos aside ul.nav a.nav-link {
+    padding-top: 0.8rem;
+    padding-right: 1rem;
+    padding-bottom: 0.8rem;
+    padding-left: 1rem;
+    color: rgb(38 38 38);
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+    border-radius: 3px;
+    /* border-top: 1px solid white; */
+}
+.tinker-pro-pos aside ul.nav .nav-item.active a.nav-link , .tinker-pro-pos aside ul.nav a.nav-link:hover {
+    background-color: rgb(255 105 0);
+    color: #f5f5f5;
+    border-top: 1px solid rgb(239, 239, 239);
+    transition: linear 100ms;
+}
+
+.text-container {
+    margin-top: 2px;
+}
+
+.dropdown a.nav-link {
+    color: rgb(255 105 0);
+}
+
+.tinker-pro-pos.collapse-sidebar {
+    grid-template-columns: 75px 1fr;
+}
+
+.tinker-pro-pos.collapse-sidebar aside .text-container {
+    display: none;
+}
+
+.pos-text-color {
+    color: rgb(255 105 0) !important;
+}
+
+span.badge.bg-primary {
+    font-size: 12px;
+    padding: 8px 15px;
+    background-color: rgb(13, 110, 253)!important;
+}
+
+span.badge.bg-success {
+    font-size: 12px;
+    padding: 8px 15px;
+    background-color: #008e00de!important;
+}
+
+span.badge.bg-danger {
+    font-size: 12px;
+    padding: 8px 15px;
+    background-color: #ff2d2dde!important;
+}
+
+span.invalid-feedback strong {
+    position: absolute;
+    font-weight: 400;
+}
+
+/* .profile-container {
+    display: grid;
+    height: 100%;
+    align-items: start;
+} */
+.profile-container img {
+    width: 23rem;
+}
+
+.tinker-pro-pos .nav-tabs a.nav-link {
+    border: 0;
+    background-color: #fff;
+    color: #ff6900;
+}
+
+.tinker-pro-pos .nav-tabs a.nav-link.active, .tinker-pro-pos .nav-tabs a.nav-link:hover {
+    border-bottom: 3px solid;
+}
+
+.profile-update-icon-container {
+    position: absolute;
+    bottom: 30px;
+    margin-right: -12rem;
+    background-color: #fff;
+    width: 3rem;
+    display: grid;
+    place-content: center;
+    height: 3rem;
+    border-radius: 50%;
+    color: rgb(255 125 0);
+    border: 1px solid rgb(255 125 0);
+}
+
+.form-control:focus {
+    border-color: rgb(255 125 0) !important;
+    box-shadow: 0 0 0 0.25rem rgb(255 125 0 / 22%) !important;
+}
